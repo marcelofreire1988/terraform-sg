@@ -5,9 +5,8 @@ variable "ingress-ports" {
 
 }
 
-
 variable "sg_name" {
   type = string
-  default = ""
+  default = "LinuxTipsConf"
   description = "Nome do SG"
 }
