@@ -4,3 +4,9 @@ variable "ingress-ports" {
   default     = [22, 8080, 80, 3306]
 
 }
+
+variable "sg_name" {
+  type = string
+  default = "LinuxTipsConf"
+  description = "Nome do SG"
+}

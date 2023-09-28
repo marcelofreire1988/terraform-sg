@@ -3,7 +3,7 @@ data "aws_vpc" "default" {
 }
 
 resource "aws_security_group" "linux-tips-conf" {
-  name        = "linux-tips-conf"
+  name        = var.sg_name
   description = "Enable some and other ports to access"
   vpc_id      = data.aws_vpc.default.id
 
