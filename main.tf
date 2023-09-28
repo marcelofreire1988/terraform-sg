@@ -18,9 +18,6 @@ resource "aws_security_group" "linux-tips-conf" {
       cidr_blocks = [
       "0.0.0.0/0"]
     }
-     tags = {
-    Name = "ingress"
-  }
   }
 
   egress {
